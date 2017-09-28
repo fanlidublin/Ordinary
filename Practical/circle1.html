@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = "en" class="tas-com">
+<head>
+	<meta charset="utf-8">
+	<title>Simple Stars</title>
+	<script type="text/javascript" src="./d3/d3.v4.js" charset="utf-8"></script>
+</head>
+<body>
+
+	<h1>Some Circles</h1>
+
+	<svg width="500" height="500" style='background: aliceblue;'>
+
+	</svg>
+
+	<script type="text/javascript">
+
+		var svg = d3.select("svg");
+
+        for(var i = 0; i < 500; i = i + 35){
+            svg.append("circle")
+                    .attr("cx", i)
+                    .attr("cy", i)
+                    .attr("r", "30")
+                    .style("fill", "green");
+        }
+
+	</script>
+
+</body>
+</html>
